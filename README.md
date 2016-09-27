@@ -1,10 +1,9 @@
 # crossover-test
 
-## Installing dependencies & running up
+## Installing dependencies
 ```
 $ npm install
 ```
-
 ## Bower install
 ```
 $ bower install
