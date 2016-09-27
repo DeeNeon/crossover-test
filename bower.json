@@ -7,5 +7,12 @@
     "font-awesome": "^4.6.3",
     "angular": "^1.5.8",
     "jquery-md5": "*"
+  },
+  "devDependencies": {
+    "angular-animate": "^1.5.8",
+    "angular-mocks": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "karma": "^0.4.6",
+    "angular-cookies": "^1.5.8"
   }
 }
