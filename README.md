@@ -1,8 +1,6 @@
 # crossover-test
 
 ## Installing dependencies & running up
-To work, the **Pixel2HTML Boilerplate** needs to install some dependencies to run the options you select.
-For this job, run this command in your shell
 
 ```
 $ npm run start
@@ -41,7 +39,7 @@ This boilerplate will create a set of files and folders
             variables.styl
       /vendor
   
-    screen_1.html
+    index.jade
 .bowerrc
 .gitattributes
 .gitignore
@@ -69,21 +67,6 @@ package.json
 
 ### Styles
 * `$ gulp main:styles` Compile, concat, autoprefix, minify and move [SCSS, Less, Stylus] files
-
-### Vendors
-
-#### Bootstrap
-
-* `$ gulp vendor:bootstrap` Compile & Move all **Bootstrap** files
-* `$ gulp vendor:bootstrap:styles` Compile, concat, autoprefix, minify and move **Bootstrap** files
-* `$ gulp vendor:bootstrap:scripts` Concat, uglify and move **Bootstrap** JS files
-* `$ gulp vendor:bootstrap:fonts` Move **Bootstrap** fonts files
-
-
-
-### jQuery
-* `$ gulp vendor:jquery` Compile & move all **jQuery** files
-* `$ gulp vendor:jquery:scripts` Compile, concat, minify and move **jQuery** files
 
 ### Daemons
 * `$ gulp watch` **Watch** your files and autoexecute gulp directives
