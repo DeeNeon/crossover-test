@@ -14,14 +14,15 @@ $ bower install
 ```
 $ mongod --dbpath=/data --port 27017
 ```
-## Run REST API
+## Run REST API - served from localhost:5000
 ```
 $ nodemon
 ```
 
+
 ## Lastly - run it!
 ```
-$ gulp serve * opens http://localhost:300
+$ gulp serve
 ```
 
 ## File Structure
