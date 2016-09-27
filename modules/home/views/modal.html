@@ -1,0 +1,19 @@
+<div class="modal-header">
+  <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
+  <h3 class="modal-title">{{item.name}}</h3>
+</div>
+<div class="modal-body">
+  <div class="embed-responsive embed-responsive-4by3">
+    <video class="embed-responsive-item" controls video-handler>
+      <source ng-src="{{item.url}}" type="video/mp4">
+    </video>
+  </div>
+   <div>
+      Popularity:
+      <star-rating rating-value="item.ratings" on-rating-selected="rateFunction(rating,item._id)"></star-rating>
+    </div>
+  <strong>Description:</strong>
+  <p>{{item.description}}</p>
+</div>
+<div class="modal-footer">
+</div>
