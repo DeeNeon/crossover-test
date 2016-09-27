@@ -1,45 +1,57 @@
 # crossover-test
 
 ## Installing dependencies & running up
-
 ```
-$ npm run start
+$ npm install
+```
+
+## Bower install
+```
+$ bower install
+```
+
+# Service dependencies
+## Run mongodb
+```
+$ mongod --dbpath=/data --port 27017
+```
+## Run REST API
+```
+$ nodemon
+```
+
+## Lastly - run it!
+```
+$ gulp serve * opens http://localhost:300
 ```
 
 ## File Structure
 
-This boilerplate will create a set of files and folders
+This boilerplate contains.
 
 ```
-
-/dist
 /src
    /assets
-      /fonts
       /gulp
-      /icons
       /images
       /js
       /styles
-            /components
-                  _buttons.styl
-                  _footer.styl
-                  _header.styl
-                  _nav.styl
-            /screens
-                  _base.styl
-                  screen_1.styl
+        /screens
+              _base.styl
+              index.styl
                   
-                        /vendor
-                /bootstrap
-                      index.scss
-                      variables.scss
-                                  main.styl
-            mixins.styl
-            variables.styl
-      /vendor
-  
+        /vendor
+              /bootstrap
+                    index.scss
+                    variables.scss
+          main.styl
+          mixins.styl
+          variables.styl
+        /vendor
     index.jade
+/test
+  /spec
+    /login-service.js
 .bowerrc
 .gitattributes
 .gitignore
@@ -55,12 +67,6 @@ package.json
 
 ### Helpers
 * `$ gulp clean` Clean /dist directory
-
-### Static Files
-* `$ gulp main:static` Compile static files (images, fonts, icons)
-* `$ gulp main:static:images` Move images
-* `$ gulp main:static:fonts` Move fonts
-* `$ gulp main:static:icons` Move icons
 
 ### Scripts
 * `$ gulp main:scripts` Concat, uglify and move JS files
